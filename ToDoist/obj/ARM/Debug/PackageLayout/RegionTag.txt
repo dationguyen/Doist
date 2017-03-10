@@ -1,0 +1,18 @@
+﻿
+        #region instances
+        #endregion
+        
+        #region fields
+        #endregion
+
+        #region properties
+        #endregion
+
+        #region Constructor
+        #endregion
+
+        #region override method
+        #endregion
+
+        #region event method
+        #endregion

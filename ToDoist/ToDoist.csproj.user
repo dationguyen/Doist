@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup>
+    <BadgeLogoSource>D:\Visual Studio Project\ToDoist\ToDoist\Assets\download %281%29.png</BadgeLogoSource>
+    <PackageLogoSource>C:\Users\darke\Desktop\Untitled-3.png</PackageLogoSource>
+    <SplashScreenSource>C:\Users\darke\Desktop\Untitled-5.png</SplashScreenSource>
+    <AppIconSource>C:\Users\darke\Desktop\Untitled-2.png</AppIconSource>
+    <Source>D:\Visual Studio Project\ToDoist\ToDoist\Assets\todoist_logo_detail.png</Source>
+    <SmallTileSource>C:\Users\darke\Desktop\Untitled-2.png</SmallTileSource>
+    <MediumTileSource>C:\Users\darke\Desktop\Untitled-2.png</MediumTileSource>
+    <WideTileSource>C:\Users\darke\Desktop\Untitled-3.png</WideTileSource>
+    <LargeTileSource>C:\Users\darke\Desktop\Untitled-2.png</LargeTileSource>
+    <AppxPackageIsForStore>False</AppxPackageIsForStore>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x86|x64|arm</AppxBuildConfigurationSelection>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,2 @@
+MainPackage=D:\Visual Studio Project\ToDoist\ToDoist\bin\x64\Debug\ToDoist_1.0.0.0_x64_Debug.appx
+SymbolPackage=D:\Visual Studio Project\ToDoist\ToDoist\AppPackages\ToDoist_1.0.0.0_Debug_Test\ToDoist_1.0.0.0_x64_Debug.appxsym
