@@ -27,6 +27,10 @@ namespace ToDoist.Services
         #endregion
 
         #region public methods
+        /// <summary>
+        /// Get item list from the todoist api
+        /// </summary>
+        /// <returns></returns>
         public async Task<List<Item>> GetItemsAzync()
         {
             //hard code the parametter for quick delivery
@@ -36,7 +40,7 @@ namespace ToDoist.Services
                 { "sync_token", "*" },
                 { "resource_types", "[\"items\"]" }
             };
-
+            //call Post request
             var response = await ApiPost<ResponseMessage>("", parameters);
             return response?.items;
         }
