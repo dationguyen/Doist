@@ -17,19 +17,12 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid >
-            <Image  Source="ms-appx:///Assets/Todoist_logo.png"  HorizontalAlignment="Left" />
-            <Button x:ConnectionId='1' HorizontalAlignment="Right" Width="100" Background="#FFE44332" Foreground="White" VerticalAlignment="Bottom"                            >
-               
-                <StackPanel Orientation="Horizontal" >
-                    <SymbolIcon x:ConnectionId='2' x:Name="Sync" Symbol="Sync" Margin="0,0,10,0"/>
-                    <TextBlock Text="Sync" TextAlignment="Right"></TextBlock>
-                </StackPanel>
-              
-            </Button>
-        </Grid>        
+
+        <Image  Source="ms-appx:///Assets/Todoist_logo.png"  HorizontalAlignment="Left" />
+
         <ListView Grid.Row="1" ItemsSource="{Binding ItemListResource}" Margin="20,40,20,0">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -40,7 +33,7 @@
                             <ColumnDefinition Width="auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
                         <TextBlock Text="{Binding content}" Foreground="Black" HorizontalAlignment="Left" FontSize="24" VerticalAlignment="Bottom" TextWrapping="WrapWholeWords" />
-                        <TextBlock Grid.Column="2"  Text="{Binding date_string}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Foreground="#CC000000" />
+                        <TextBlock Grid.Column="2"  Text="{Binding date_string}" HorizontalAlignment="Right" Foreground="#CC000000" Margin="0,0,0,4" VerticalAlignment="Bottom" />
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
@@ -51,7 +44,14 @@
             </ListView.ItemContainerStyle>
         </ListView>
         <ProgressBar Grid.Row="1" VerticalAlignment="Bottom" VerticalContentAlignment="Stretch" IsIndeterminate="{Binding ProgressBarIsActive}" Background="Transparent"  />
-        <TextBlock Grid.Row="2" Text="{Binding ErrorMessage}" VerticalAlignment="Bottom" Foreground="#FFFF6D6D" TextWrapping="Wrap" TextAlignment="Center" />
+        <Button x:ConnectionId='1'  Grid.Row="2" HorizontalAlignment="Left" Width="100" Background="#FFE44332" Foreground="White" VerticalAlignment="Bottom"                            Margin="20,0,0,0" >
+            <StackPanel Orientation="Horizontal" >
+                <SymbolIcon x:ConnectionId='2' x:Name="Sync" Symbol="Sync" Margin="0,0,10,0"/>
+                <TextBlock Text="Sync" TextAlignment="Right"></TextBlock>
+            </StackPanel>
+        </Button>
+        <TextBlock Grid.Row="3" Text="{Binding ErrorMessage}" VerticalAlignment="Bottom" Foreground="#FFFF6D6D" TextWrapping="Wrap" TextAlignment="Center" />
+    
     </Grid>
 </Page>
 

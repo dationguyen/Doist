@@ -33,6 +33,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="Margin" />
@@ -45,6 +49,16 @@
       <RootProperty Name="IsIndeterminate" />
       <RootProperty Name="Background" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="Tapped" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
@@ -53,8 +67,17 @@
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>
@@ -68,27 +91,6 @@
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="Source" />
-      <RootProperty Name="HorizontalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Content" />
-      <RootEvent Name="Tapped" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="Children" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
-      <RootProperty Name="Symbol" />
-      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="ToDoist.Views.MainPage" />
   </Roots.RootTypes>
