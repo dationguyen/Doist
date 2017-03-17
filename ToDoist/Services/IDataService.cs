@@ -9,8 +9,8 @@ namespace ToDoist.Services
 {
     public interface IDataService
     {
-        void SaveData(List<Item> itemList);
-        Task<List<Item>> LoadData();
+        void SaveData(List<TodoistTask> itemList);
+        Task<List<TodoistTask>> LoadData();
 
     }
 }

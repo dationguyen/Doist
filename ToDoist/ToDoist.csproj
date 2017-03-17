@@ -101,8 +101,8 @@
     </Compile>
     <Compile Include="DesignViewModels\MainPageViewModel.cs" />
     <Compile Include="Interface\IMainPageViewModel.cs" />
-    <Compile Include="Models\ItemModel.cs" />
     <Compile Include="Models\ResponseMessage.cs" />
+    <Compile Include="Models\TodoTask.cs" />
     <Compile Include="Services\DataService.cs" />
     <Compile Include="Services\IDataService.cs" />
     <Compile Include="Services\IToDoistApiClient.cs" />

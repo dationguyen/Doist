@@ -11,6 +11,7 @@ using ToDoist.Models;
 using Windows.Networking.Connectivity;
 using ToDoist.Interface;
 using Windows.UI.Xaml.Input;
+using System.Diagnostics;
 
 namespace ToDoist.ViewModels
 {
@@ -23,13 +24,13 @@ namespace ToDoist.ViewModels
         #endregion
 
         #region fields
-        private List<Item> itemListResource;
+        private List<TodoistTask> itemListResource;
         private bool progressBarIsActive;
         private string errorMessage;
         #endregion
 
         #region properties
-        public List<Item> ItemListResource
+        public List<TodoistTask> ItemListResource
         {
             get => itemListResource;
             set => SetProperty(ref itemListResource, value);
@@ -95,7 +96,8 @@ namespace ToDoist.ViewModels
                 ProgressBarIsActive = false;
 
                 //save data to local
-                _DataService.SaveData(data);
+                for(int i = 0; i < 100; i ++)
+                    _DataService.SaveData(data);
             }
             else
             {
@@ -107,7 +109,7 @@ namespace ToDoist.ViewModels
                 if (data != null)
                 {
                     //render data from local
-                    ItemListResource = data;                  
+                    ItemListResource = data;
                     ErrorMessage = "Offline mode! you are using local data";
                 }
                 else
@@ -119,7 +121,7 @@ namespace ToDoist.ViewModels
                 //hide progessbar
                 ProgressBarIsActive = false;
             }
-            
+
 
         }
 

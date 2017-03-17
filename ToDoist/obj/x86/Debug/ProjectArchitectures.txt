@@ -1,1 +1,0 @@
-D:\Visual Studio Project\ToDoist\ToDoist\ToDoist.csproj;x86

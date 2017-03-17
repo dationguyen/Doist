@@ -9,7 +9,7 @@ namespace ToDoist.Interface
 {
     interface IMainPageViewModel
     {
-        List<Item> ItemListResource { get; set; }
+        List<TodoistTask> ItemListResource { get; set; }
         bool ProgressBarIsActive { get; set; }
         string ErrorMessage { get; set; }
     }

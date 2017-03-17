@@ -6,6 +6,6 @@ namespace ToDoist.Services
 {
     public interface IToDoistApiClient
     {
-        Task<List<Item>> GetItemsAzync();
+        Task<List<TodoistTask>> GetItemsAzync();
     }
 }

@@ -31,7 +31,7 @@ namespace ToDoist.Services
         /// Get item list from the todoist api
         /// </summary>
         /// <returns></returns>
-        public async Task<List<Item>> GetItemsAzync()
+        public async Task<List<TodoistTask>> GetItemsAzync()
         {
             //hard code the parametter for quick delivery
             var parameters = new Dictionary<string, string>

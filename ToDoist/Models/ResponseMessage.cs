@@ -10,6 +10,6 @@ namespace ToDoist.Models
     {
         public string sync_token { get; set; }
         public bool full_sync { get; set; }
-        public List<Item> items { get; set; }
+        public List<TodoistTask> items { get; set; }
     }
 }
